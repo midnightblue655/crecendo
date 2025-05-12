@@ -33,6 +33,7 @@ body {
 #wrap{
     min-width: 1400px;
     overflow: hidden;
+    height: 13400px;
 }
 
 .header_wrap {
@@ -279,6 +280,14 @@ body {
     margin: auto;
     padding-right: 620px;
 }
+.img_1>p{
+    padding-top: 80px;
+    padding-left: 290px;
+    font-size: 50px;
+    line-height: 70px;
+    color: #fff;
+    font-weight: bolder;
+}
 .swiss{
     padding-top: 108px;
     width: 1320px;
@@ -392,7 +401,7 @@ body {
 }
 .wondu{
     width: 1320px;
-    height: 4600px;
+    height: 5680px;
     margin: auto;
     padding-top: 100px;
 }
@@ -406,16 +415,81 @@ body {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 40px;
-    border: 1px solid #5259A3;;
-    background-color: #fff;
-    color: #5259A3;;
+    
 }
-.tap li a:hover{
+.tap li:nth-child(1) a{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+.tap li:nth-child(2) a{
+    border: 1px solid #cfb9a1;
+    background-color: #fff;
+    color: #cfb9a1;
+}
+.tap li:nth-child(3) a{
+    border: 1px solid #8f8681;
+    background-color: #fff;
+    color: #8f8681;
+}
+.tap li:nth-child(4) a{
+    border: 1px solid #c86a6a;
+    background-color: #fff;
+    color: #c86a6a;
+}
+.tap li:nth-child(5) a{
+    border: 1px solid #cfb9a1;
+    background-color: #fff;
+    color: #cfb9a1;
+}
+.tap li:nth-child(6) a{
+    border: 1px solid #cfb9a1;
+    background-color: #fff;
+    color: #cfb9a1;
+}
+.tap li:nth-child(7) a{
+    border: 1px solid #5259A3;
+    background-color: #fff;
+    color: #5259A3;
+}
+.tap li:nth-child(8) a{
+    border: 1px solid #547854;
+    background-color: #fff;
+    color: #547854;
+}
+.tap li:nth-child(1) a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.tap li:nth-child(2) a:hover{
+    background-color: #cfb9a1;
+    color: #fff;
+}
+.tap li:nth-child(3) a:hover{
+    background-color: #8f8681;
+    color: #fff;
+}
+.tap li:nth-child(4) a:hover{
+    background-color: #c86a6a;
+    color: #fff;
+}
+.tap li:nth-child(5) a:hover{
     background-color: #5259A3;;
     color: #fff;
 }
+.tap li:nth-child(6) a:hover{
+    background-color: #5259A3;;
+    color: #fff;
+}
+.tap li:nth-child(7) a:hover{
+    background-color: #5259A3;;
+    color: #fff;
+}
+.tap li:nth-child(8) a:hover{
+    background-color: #547854;
+    color: #fff;
+}
 .banner_wondu{
-    
     width: 1320px;
     margin: auto;
     background: url(../image/background_wondu_1.png);
@@ -504,9 +578,10 @@ span{
     width: 300px;
 }
 .event_banner{
+    width: 100%;
     height: 430px;
     margin: auto;
-    background-color: #1D2362;
+    background: url(../image/event_1.png) center no-repeat;
     margin-bottom: 120px;
 }
 .delivery_banner{
@@ -517,26 +592,88 @@ span{
     margin: auto;
     margin-bottom: 172px;
 }
-.photo_review{
-    height: 794px;
-    margin: auto;
-    background-color: #1D2362;
-    margin-bottom: 122px;
+.sns_slide {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 30px;
 }
-.sns_review{
-    height: 390px;
-    margin: auto;
-    background-color: #d0e8f3;
-    margin-bottom: 202px;
+
+/*width를 본인에 맞게 수정하여 사용하세요! --아래 3개*/
+.slide_inner {
+    width: 4600px;
+    /*ul길이의 두배!*/
+    display: flex;
+    animation: rotate 12s linear infinite;
+}
+
+.slide_inner ul {
+    display: flex;
+    width: 1800px;
+    /*li크기를 전부합한것보다 더 여유있게.*/
+    justify-content: space-around;
+}
+
+.slide_inner ul li {
+    width: 400px;
+    margin-right: 50px;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요!*/
+
+
+.slide_inner ul li img {
+    width: 100%;
+}
+
+.slide_inner:hover {
+    animation-play-state: paused;
+}
+
+/*슬라이드에 호버시 애니메이션이 멈추게 만듦*/
+
+
+
+@keyframes rotate {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1800px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
 }
 .footer_wrap{
+    box-sizing: border-box;
     margin: auto;
-    height: 00px;
-    background-color: #ddd;
+    padding: 20px 0;
+    background-color: #525252;
+    font-size: 14px;
+    color: #fff;
 }
 .footer_1{
+    box-sizing: border-box;
     align-items: center;
     width: 1320px;
     margin: auto;
-    background-color: #ddd;
+    background-color: #525252;
+    display: flex;
+}
+.footer_2 ul{
+    padding-top: 30px;
+    font-size: 14px;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 15px;
+}
+.footer_2{
+    padding-left: 50px;
+    padding-bottom: 40px;
+}
+.footer_2 ul li a:hover{
+    color: #cbcbcb;
+}
+.footer_2 p{
+    line-height: 17px;
 }
