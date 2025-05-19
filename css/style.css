@@ -36,7 +36,7 @@ body {
 #wrap {
     min-width: 1400px;
     overflow: hidden;
-    height: 12420px;
+    height: 13200px;
 }
 
 .bg {
@@ -364,6 +364,18 @@ body {
     text-align: center;
     margin-bottom: 89px;
 }
+.swiss_water li{
+    position: relative;
+    width: 220px;
+    height: 200px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.swiss_water li img{
+    position: absolute;
+    top: -28px;
+    left: 80px;
+}
 
 .swiss_water {
     display: flex;
@@ -520,9 +532,9 @@ body {
 }
 
 .tap li:nth-child(6) a {
-    border: 1px solid #fecc16;
+    border: 1px solid #753a0d;
     background-color: #fff;
-    color: #fecc16;
+    color: #753a0d;
 }
 
 .tap li:nth-child(7) a {
@@ -564,7 +576,7 @@ body {
 }
 
 .tap li:nth-child(6) a:hover {
-    background-color: #fecc16;
+    background-color: #753a0d;
     ;
     color: #fff;
 }
@@ -585,7 +597,7 @@ body {
     margin: auto;
     background: url(../image/background_wondu_1.png);
     height: 400px;
-    margin-bottom: 340px;
+    margin-bottom: 150px;
 }
 
 .banner_wondu ul {
@@ -615,13 +627,7 @@ body {
     height: 540px;
     box-sizing: border-box;
     position: relative;
-}
-.sale{
-    position: absolute;
-    width: 60px;
-    height: 68px;
-    left: 0;
-    top: 0;
+    
 }
 .sangpum_text {
     padding-top: 17px;
@@ -698,15 +704,32 @@ span {
     margin-bottom: 210px;
 }
 
-.delivery_banner {
+.delivery {
     width: 1320px;
-    height: 675px;
-    background: url(../image/delivery.png) no-repeat center;
-    background-size: cover;
+    height: 570px;
     margin: auto;
-    margin-bottom: 172px;
+    box-sizing: border-box;
+    margin-bottom: 210px;
+}
+.delivery>h1{
+    text-align: center;
+    margin-bottom: 56px;
 }
 
+.delivery>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.delivery>ul>li{
+    width: 432px;
+}
+.delivery>ul>li ul{
+    list-style: disc;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 35px;
+    padding-top: 23px;
+}
 .sns_slide {
     width: 100%;
     overflow: hidden;
