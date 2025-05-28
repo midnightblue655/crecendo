@@ -409,7 +409,7 @@ body {
 
 .best_2 {
     width: 1320px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .best_2>ul {
@@ -455,19 +455,44 @@ body {
 .best_3 ul li a:hover {
     opacity: 0.5;
 }
+.card{
+    width: 1320px;
+}
 
-.pade {
-    transition: all 0.5s;
-    opacity: 0;
+.card .swiper-slide{
+   
+    
     width: 376px;
     height: 444px;
     border-radius: 44px;
+    overflow: hidden;
+}
+.pade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 426px;
+    height: 444px;
+    border-radius: 44px;
     background-color: hsla(0, 0%, 33%, 0.294);
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.pade>ul{
+  padding-top: 280px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.swiper-slide:hover .pade{
+  opacity: 1;
+}
+.card .swiper-slide img{
+    width: 100%;
 }
 
-.best_2 ul li:hover .pade {
-    opacity: 1;
-}
+
 
 .pade_2 {
     padding-top: 300px;
